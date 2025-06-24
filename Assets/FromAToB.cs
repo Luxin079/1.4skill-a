@@ -18,16 +18,9 @@ public class FromAToB : MonoBehaviour
     void Start()
     {
         DifferenceVector = B.transform.position - A.transform.position;
-        Debug.Log(DifferenceVector);
-        
         distance = DifferenceVector.magnitude;
-        Debug.Log(distance);
-
         Direction = DifferenceVector.normalized;
-        Debug.Log(Direction);
-
         Player.transform.position = A.transform.position;
-
         duration = distance / 1;
     }
 
